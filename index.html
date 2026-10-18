@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Navo Studio — Websites, Apps & Promo Videos</title>
+<meta name="description" content="Navo Studio builds websites, mobile apps and promo videos for growing businesses. Websites from RM100/month. Based in Kuala Lumpur, working worldwide.">
+<meta property="og:title" content="Navo Studio — Websites, Apps & Promo Videos">
+<meta property="og:description" content="Websites from RM100/month. Mobile apps, promo videos and setup guides. Kuala Lumpur, working worldwide.">
+<meta property="og:image" content="assets/promo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0c0e;--bg2:#141417;--card:#18181c;--line:#26262c;
+  --text:#f4f4f5;--mute:#a1a1aa;--dim:#71717a;
+  --accent:#c6f432;--accent-ink:#0c0c0e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,video{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.05;letter-spacing:-.02em}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(12,12,14,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.35rem;letter-spacing:-.03em}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;align-items:center;font-size:.92rem;color:var(--mute)}
+.navlinks a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:var(--accent-ink)}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{background:var(--card)}
+.navlinks .btn{padding:9px 16px;color:var(--accent-ink)}
+@media(max-width:760px){.navlinks a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:88px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{margin:22px 0 32px;font-size:1.15rem;color:var(--mute);max-width:540px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .meta{display:flex;gap:28px;margin-top:40px;flex-wrap:wrap}
+.hero .meta div{font-size:.88rem;color:var(--dim)}
+.hero .meta b{display:block;font-family:'Bricolage Grotesque';font-size:1.6rem;color:var(--text)}
+.me{position:relative;justify-self:center}
+.me img{width:300px;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;border:3px solid var(--line)}
+.me .tag{position:absolute;bottom:18px;left:-10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:.85rem}
+.me .tag b{display:block;font-size:.95rem}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:6px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.me{order:-1}.me img{width:180px}.me .tag{position:static;margin-top:12px;text-align:center}.hero{padding-top:48px}}
+
+section{padding:88px 0;border-top:1px solid var(--line)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+.head h2{font-size:clamp(2rem,4.4vw,3.2rem);margin-top:10px;max-width:640px}
+.head p{color:var(--mute);max-width:380px}
+
+/* work */
+.work-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.card .body{padding:22px 24px 26px}
+.card h3{font-size:1.4rem;margin-bottom:6px}
+.card p{color:var(--mute);font-size:.95rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.chip{font-size:.75rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
+.w-site{grid-column:span 6;display:grid;grid-template-columns:1fr 1fr}
+.w-site .shot{background:linear-gradient(135deg,#1f2a12,#0f1408);display:flex;align-items:center;justify-content:center;padding:36px;min-height:280px}
+.browser{width:100%;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.browser .bar{background:#eee;padding:9px 12px;display:flex;gap:6px;align-items:center}
+.browser .bar i{width:10px;height:10px;border-radius:50%;background:#d4d4d8}
+.browser .bar span{margin-left:10px;font-size:.72rem;color:#52525b;background:#fff;border-radius:6px;padding:2px 10px}
+.browser .frame{position:relative;height:280px;overflow:hidden;background:#fafafa url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='40'%3E%3Ctext x='150' y='25' font-family='sans-serif' font-size='16' fill='%23a1a1aa' text-anchor='middle'%3Ecngsynergy.com%3C/text%3E%3C/svg%3E") center/300px no-repeat}
+.browser iframe{width:200%;height:560px;border:0;transform:scale(.5);transform-origin:0 0;margin-bottom:-280px;pointer-events:none}
+.w-site .body{display:flex;flex-direction:column;justify-content:center;padding:40px}
+.w-site .body a{margin-top:22px;align-self:flex-start}
+.w-app{grid-column:span 6}
+.screens{display:flex;gap:14px;padding:28px 24px 0;overflow-x:auto;scrollbar-width:none;background:linear-gradient(180deg,#2a1030,#18181c)}
+.screens img{width:210px;flex:none;border-radius:16px 16px 0 0}
+.w-vid{grid-column:span 3}
+.w-vid video{width:100%;aspect-ratio:9/12;object-fit:cover;background:#000}
+@media(max-width:860px){.w-site{grid-template-columns:1fr}.w-vid{grid-column:span 6}}
+
+/* services */
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:4px}
+.toggle button{background:none;border:0;color:var(--mute);font:600 .85rem Inter;padding:7px 16px;border-radius:999px;cursor:pointer}
+.toggle button.on{background:var(--text);color:var(--bg)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc .card{padding:28px;display:flex;flex-direction:column}
+.svc .card.hot{border-color:var(--accent);background:linear-gradient(180deg,#1b2110,var(--card))}
+.svc .ic{width:44px;height:44px;border-radius:12px;background:var(--bg2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:18px}
+.svc h3{font-size:1.3rem}
+.svc p{color:var(--mute);font-size:.93rem;margin:8px 0 20px;flex:1}
+.price{font-family:'Bricolage Grotesque';font-size:1.7rem;font-weight:700}
+.price small{font-family:Inter;font-size:.82rem;color:var(--dim);font-weight:500}
+.badge{align-self:flex-start;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);padding:4px 10px;border-radius:999px;margin-bottom:14px}
+@media(max-width:860px){.svc{grid-template-columns:1fr}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{padding:26px;border-radius:20px;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:'Bricolage Grotesque';font-weight:800;font-size:2rem;color:var(--accent)}
+.step h3{font-size:1.15rem;margin:12px 0 6px}
+.step p{color:var(--mute);font-size:.92rem}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.about p{color:var(--mute);margin-bottom:16px;font-size:1.05rem}
+.about p b{color:var(--text);font-weight:600}
+.logos{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.logos span{padding:8px 14px;border:1px solid var(--line);border-radius:10px;font-size:.88rem;color:var(--mute)}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:20px}}
+
+/* contact */
+.contact{text-align:center;padding:110px 0}
+.contact h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+.contact p{color:var(--mute);margin:18px auto 34px;max-width:520px;font-size:1.1rem}
+.contact .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--dim);font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#" class="logo">navo<span>.</span>studio</a>
+  <div class="navlinks">
+    <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a>
+    <a href="https://wa.me/601120616323?text=Hi%20Navein%2C%20I%20saw%20Navo%20Studio" class="btn btn-accent" target="_blank" rel="noopener">WhatsApp me</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">Kuala Lumpur · Working worldwide</div>
+    <h1>Your business, <em>online</em> and looking sharp.</h1>
+    <p class="lead">I build websites, mobile apps and promo videos for small businesses. Real developer, fast turnaround, prices that don't need a meeting to approve.</p>
+    <div class="ctas">
+      <a href="https://wa.me/601120616323?text=Hi%20Navein%2C%20I%20need%20a%20website" class="btn btn-accent" target="_blank" rel="noopener">Get a website →</a>
+      <a href="#work" class="btn btn-ghost">See my work</a>
+    </div>
+    <div class="meta">
+      <div><b>5+ yrs</b>building software</div>
+      <div><b>RM100</b>/month websites</div>
+      <div><b>Live</b>on App Store & Play</div>
+    </div>
+  </div>
+  <div class="me">
+    <img src="assets/me.webp" alt="Navein Kulaendran, founder of Navo Studio" width="300" height="300">
+    <div class="tag"><span class="dot"></span><b>Navein Kulaendran</b>Founder & developer</div>
+  </div>
+</div></header>
+
+<section id="work"><div class="wrap">
+  <div class="head">
+    <div><div class="eyebrow">Selected work</div><h2>Built, shipped and live right now.</h2></div>
+    <p>Not mockups. Every project here is in use by a real business today.</p>
+  </div>
+  <div class="work-grid">
+    <div class="card w-site">
+      <div class="shot"><div class="browser">
+        <div class="bar"><i></i><i></i><i></i><span>cngsynergy.com</span></div>
+        <div class="frame"><iframe src="https://cngsynergy.com" title="CNG Synergy website preview" tabindex="-1"></iframe></div>
+      </div></div>
+      <div class="body">
+        <div class="eyebrow">Website</div>
+        <h3 style="font-size:1.9rem;margin-top:8px">CNG Synergy</h3>
+        <p>Company website for a driver training and fleet safety firm. Designed, built, hosted and maintained end to end.</p>
+        <div class="chips"><span class="chip">Design</span><span class="chip">Build</span><span class="chip">Hosting</span><span class="chip">Business email</span></div>
+        <a href="https://cngsynergy.com" target="_blank" rel="noopener" class="btn btn-ghost">Visit site ↗</a>
+      </div>
+    </div>
+
+    <div class="card w-app">
+      <div class="screens">
+        <img src="assets/app1.webp" alt="ProHayat 180 learning screen">
+        <img src="assets/app2.webp" alt="ProHayat 180 team notifications">
+        <img src="assets/app3.webp" alt="ProHayat 180 safety score">
+        <img src="assets/app4.webp" alt="ProHayat 180 quiz">
+      </div>
+      <div class="body">
+        <div class="eyebrow">Mobile app</div>
+        <h3 style="margin-top:8px">ProHayat 180</h3>
+        <p>Safety training app for professional drivers: daily quizzes, performance scores, leaderboards and fleet-wide alerts. Live on the App Store, Google Play and web.</p>
+        <div class="chips"><span class="chip">iOS</span><span class="chip">Android</span><span class="chip">Web</span><span class="chip">Admin dashboard</span></div>
+      </div>
+    </div>
+
+    <div class="card w-vid">
+      <video src="assets/promo.mp4" poster="assets/promo.jpg" controls playsinline preload="none"></video>
+      <div class="body"><div class="eyebrow">Promo video</div><h3 style="margin-top:8px">App launch ad</h3><p>30-second vertical ad for Instagram, TikTok and Facebook.</p></div>
+    </div>
+    <div class="card w-vid">
+      <video src="assets/guide.mp4" poster="assets/guide.jpg" controls playsinline preload="none"></video>
+      <div class="body"><div class="eyebrow">Setup guide</div><h3 style="margin-top:8px">Onboarding walkthrough</h3><p>Step-by-step video so customers get started without calling support.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="head">
+    <div><div class="eyebrow">Services & pricing</div><h2>Clear prices. No surprises.</h2></div>
+    <div class="toggle" role="group" aria-label="Currency"><button class="on" data-c="myr">MYR</button><button data-c="usd">USD</button></div>
+  </div>
+  <div class="svc">
+    <div class="card hot">
+      <span class="badge">Most popular</span>
+      <div class="ic">🌐</div><h3>Website</h3>
+      <p>Custom-designed site, hosting, domain setup, mobile-friendly, updates included. Cancel anytime.</p>
+      <div class="price" data-myr="RM100" data-usd="$59">RM100 <small>/ month</small></div>
+    </div>
+    <div class="card">
+      <div class="ic">📱</div><h3>Mobile app</h3>
+      <p>iOS + Android app with admin dashboard, published to the App Store and Google Play.</p>
+      <div class="price" data-myr="RM10k" data-usd="$4k">RM10k <small>starting</small></div>
+    </div>
+    <div class="card">
+      <div class="ic">🎬</div><h3>Promo video</h3>
+      <p>Short vertical ads for social media. Script, edit, music and captions done for you.</p>
+      <div class="price" data-myr="RM300" data-usd="$150">RM300 <small>per video</small></div>
+    </div>
+    <div class="card">
+      <div class="ic">🧭</div><h3>Setup guide video</h3>
+      <p>Walkthrough videos for your app, product or system. Fewer support calls, happier customers.</p>
+      <div class="price" data-myr="RM300" data-usd="$150">RM300 <small>per video</small></div>
+    </div>
+    <div class="card">
+      <div class="ic">📣</div><h3>Ads setup</h3>
+      <p>Meta and Google ads set up, targeted and tracked properly. Ad spend paid by you, separately.</p>
+      <div class="price" data-myr="RM600" data-usd="$400">RM600 <small>/ month</small></div>
+    </div>
+    <div class="card">
+      <div class="ic">✨</div><h3>Something else?</h3>
+      <p>Landing pages, booking systems, dashboards, automation. If it runs on a screen, ask.</p>
+      <div class="price">Let's talk</div>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><div><div class="eyebrow">How it works</div><h2>From chat to live in days, not months.</h2></div></div>
+  <div class="steps">
+    <div class="step"><h3>WhatsApp me</h3><p>Tell me about your business and what you need. Five minutes.</p></div>
+    <div class="step"><h3>See a draft</h3><p>I send you a first version to look at before you pay anything big.</p></div>
+    <div class="step"><h3>Tweak it</h3><p>Change text, photos, colours until you're happy.</p></div>
+    <div class="step"><h3>Go live</h3><p>Launched on your domain. I keep it running and updated.</p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div><div class="eyebrow">About</div><h2 style="font-size:clamp(2rem,4.4vw,3rem);margin-top:10px">Hi, I'm Navein.</h2></div>
+  <div>
+    <p>I'm a <b>software developer with 5+ years of experience</b> building web and mobile apps for companies like AIA, Accenture and banking clients. I also lead product and technology at CNG Synergy, where my team shipped ProHayat 180.</p>
+    <p>Navo Studio is me bringing that same quality to small businesses, without the agency price tag. You deal with me directly, from first message to launch.</p>
+    <div class="logos"><span>React</span><span>React Native</span><span>Node.js</span><span>Supabase</span><span>English</span><span>Bahasa Malaysia</span><span>Tamil</span></div>
+    <div style="margin-top:28px"><a href="https://www.linkedin.com/in/naveinthiran97" target="_blank" rel="noopener" class="btn btn-ghost">View my LinkedIn ↗</a></div>
+  </div>
+</div></section>
+
+<section class="contact"><div class="wrap">
+  <h2>Let's build yours.</h2>
+  <p>Message me on WhatsApp for the fastest reply. I usually answer within the hour.</p>
+  <div class="ctas">
+    <a href="https://wa.me/601120616323?text=Hi%20Navein%2C%20I%20saw%20Navo%20Studio" class="btn btn-accent" target="_blank" rel="noopener">WhatsApp +60 11-2061 6323</a>
+    <a href="mailto:naveinthiran97@gmail.com" class="btn btn-ghost">naveinthiran97@gmail.com</a>
+    <a href="https://www.linkedin.com/in/naveinthiran97" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Navo Studio · Kuala Lumpur, Malaysia</span><span>Built by Navo Studio</span></div></footer>
+
+<script>
+document.querySelectorAll('.toggle button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.toggle button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.price[data-myr]').forEach(p=>{p.firstChild.nodeValue=p.dataset[b.dataset.c]+' '});
+});
+</script>
+</body>
+</html>
