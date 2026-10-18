@@ -86,7 +86,14 @@ section{padding:88px 0;border-top:1px solid var(--line)}
 .w-vid{grid-column:span 3}
 .w-vid .vbox{background:#000;display:flex;justify-content:center}
 .w-vid video{height:min(78vh,720px);width:auto;max-width:100%;aspect-ratio:9/16;object-fit:contain;background:#000}
+.w-cv{grid-column:span 6;display:grid;grid-template-columns:1fr 1fr}
+.w-cv .shot{background:linear-gradient(135deg,#10202a,#0a1014);padding:36px 36px 0;display:flex;justify-content:center;align-items:flex-end;max-height:440px;overflow:hidden}
+.w-cv .shot img{width:100%;max-width:520px;border-radius:10px 10px 0 0;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.w-cv .body{display:flex;flex-direction:column;justify-content:center;padding:40px}
+.w-cv ul{margin:14px 0 0 18px;color:var(--mute);font-size:.93rem;line-height:1.7}
+.w-cv .body a{margin-top:22px;align-self:flex-start}
 @media(max-width:860px){.w-site{grid-template-columns:1fr}.w-vid{grid-column:span 6}}
+@media(max-width:860px){.w-cv{grid-template-columns:1fr}.w-cv .shot{max-height:340px}}
 
 /* services */
 .svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -198,6 +205,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       </div>
     </div>
 
+    <div class="card w-cv">
+      <div class="shot"><img src="assets/resume.webp" alt="Sample resume tailored for a Senior Frontend Engineer role" loading="lazy"></div>
+      <div class="body">
+        <div class="eyebrow">Resume</div>
+        <h3 style="font-size:1.9rem;margin-top:8px">Tailored to the job ad</h3>
+        <p>Senior Frontend Engineer resume, rewritten to match the JD. Same experience, but the right keywords up top so recruiters and ATS filters see the fit in 6 seconds.</p>
+        <ul><li>Summary and skills mirror the JD's wording</li><li>Bullets show results, not "responsible for"</li><li>Clean, ATS-friendly layout</li></ul>
+        <div class="chips"><span class="chip">ATS-friendly</span><span class="chip">JD-matched</span><span class="chip">24h turnaround</span></div>
+        <a href="https://wa.me/601120616323?text=Hi%20Navein%2C%20I%20want%20my%20resume%20tailored%20to%20a%20job" target="_blank" rel="noopener" class="btn btn-ghost">Fix my resume →</a>
+      </div>
+    </div>
+
     <div class="card w-vid">
       <div class="vbox"><video src="assets/promo.mp4" poster="assets/promo.jpg" controls playsinline preload="none"></video></div>
       <div class="body"><div class="eyebrow">Promo video</div><h3 style="margin-top:8px">App launch ad</h3><p>30-second vertical ad for Instagram, TikTok and Facebook.</p></div>
@@ -253,8 +272,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     </div>
     <div class="card">
       <div class="ic">📄</div><h3>Resume & LinkedIn</h3>
-      <p>A resume that gets past recruiters, plus a LinkedIn profile rewrite to match.</p>
+      <p>A resume that gets past recruiters, plus a LinkedIn profile rewrite to match. Then tailored to every job you apply for.</p>
       <div class="price" data-myr="RM100" data-usd="$60">RM100 <small>one-off</small></div>
+      <div class="alt">+ <span class="price-alt" data-myr="RM20" data-usd="$10">RM20</span> per job ad tailoring, or <span class="price-alt" data-myr="RM50" data-usd="$25">RM50</span> for 3</div>
     </div>
     <div class="card wide">
       <div><div class="ic">✨</div><h3>Something else?</h3>
