@@ -24,7 +24,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .btn-accent{background:var(--accent);color:var(--accent-ink)}
 .btn-ghost{border:1px solid var(--line);color:var(--text)}
 .btn-ghost:hover{background:var(--card)}
-.navlinks .btn{padding:9px 16px;color:var(--accent-ink)}
+.navlinks .btn{padding:9px 16px;color:var(--accent-ink);gap:4px}
 @media(max-width:760px){.navlinks>a:not(.btn){display:none}.navlinks{gap:10px}.navlinks .btn{padding:8px 13px;font-size:.85rem;white-space:nowrap}}
 
 /* hero */
